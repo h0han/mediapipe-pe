@@ -82,6 +82,7 @@ def main():
         img = detector.findPose(img)
         lmList = detector.getPosition(img)
         print(lmList)
+        # print(lmList[14]) # 특정 관절 좌표만 뽑아보고 싶은 경우
 
         cTime = time.time()
         fps = 1/(cTime - pTime)
